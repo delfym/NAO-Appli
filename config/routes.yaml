@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\PagesController::index
+
+#index_template:
+#    path: /index_template
+#    controller: App\Controller\PagesController::test
