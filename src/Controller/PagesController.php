@@ -88,4 +88,16 @@ class PagesController
     public function contact(Environment $twig){
         return new Response($twig->render('pages/contact.html.twig'));
     }
+
+    /**
+     * @Route("/signin")
+     * @param Environment $twig
+     * @return Response
+     * @throws \Twig_Error_Loader
+     * @throws \Twig_Error_Runtime
+     * @throws \Twig_Error_Syntax
+     */
+    public function signin(Environment $twig){
+        return new Response($twig->render('pages/signin.html.twig'));
+    }
 }
