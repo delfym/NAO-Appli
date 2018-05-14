@@ -8,7 +8,7 @@
 	<div class="container">
 
 		<ol class="breadcrumb">
-			<li><a href="index.html">Accueil</a></li>
+			<li><a href="{{ asset('home') }}">Accueil</a></li>
 			<li class="active">Accès membre</li>
 		</ol>
 
@@ -24,7 +24,7 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<h3 class="thin text-center">Identifiez-vous</h3>
-							<p class="text-center text-muted">Si vous n'avez pas encore de compte, <a href="signup.html">Créez votre compte</a></p>
+							<p class="text-center text-muted">Si vous n'avez pas encore de compte, <a href="{{ ('signup') }}">Créez votre compte</a></p>
 							<hr>
 							
 							<form>
