@@ -13,6 +13,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 var myLocation;
 var myLat;
 var myLng;
+var marker;
 
 function onMapClick(e) {
     myLocation = e.latlng;
@@ -22,8 +23,8 @@ function onMapClick(e) {
 
 mymap.on('click', function (e) {
     onMapClick(e);
-    var marker;
-    if(marker != null)
+
+    if(marker != undefined)
     {
         marker.remove();
     }

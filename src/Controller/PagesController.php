@@ -53,15 +53,15 @@ class PagesController
     }
 
     /**
-     * @Route("/sidebarLeft")
+     * @Route("/observForm")
      * @param Environment $twig
      * @return Response
      * @throws \Twig_Error_Loader
      * @throws \Twig_Error_Runtime
      * @throws \Twig_Error_Syntax
      */
-    public function sidebarLeft(Environment $twig){
-        return new Response($twig->render('pages/sidebar-left.html.twig'));
+    public function observForm(Environment $twig){
+        return new Response($twig->render('pages/observForm.html.twig'));
     }
 
     /**
