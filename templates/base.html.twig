@@ -5,6 +5,8 @@
         <meta name="viewport"    content="width=device-width, initial-scale=1.0">
         <meta name="description" content="NAO Application">
         <meta name="author"      content="watching birds">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
         <title>{% block title %}NAO App{% endblock %}</title>
 
         {% block stylesheets %}
@@ -45,11 +47,12 @@
                 <ul class="nav navbar-nav pull-right">
                     <li class="active"><a href="{{ asset('home') }}">Accueil</a></li>
                     <li><a href="{{ asset('about') }}">A propos</a></li>
+                    <li><a href="{{ asset('observForm') }} ">Saisir une observation</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <!--li><a href="{# {{ path('sidebarLeft') }} #}">Left Sidebar</a></li-->
-                            <li><a href="{{ asset('observForm') }} ">Mon observation</a></li>
+                            <li><a href="{{ asset('observForm') }} ">Saisir une observation</a></li>
                             <li class="active"><a href="{{ asset('sidebarRight') }}">Right Sidebar</a></li>
                         </ul>
                     </li>
@@ -145,7 +148,6 @@
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            <script src="{{ asset('js/leaflet-map.js') }}"></script>
 
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -153,6 +155,7 @@
             <script src="{{ asset('js/headroom.min.js') }}"></script>
             <script src="{{ asset('js/jQuery.headroom.min.js')}}"></script>
             <script src="{{ asset('js/template.js')}}"></script>
+            <script src="{{ asset('js/leaflet-map.js') }}"></script>
     <!--[endif]-->
         {% endblock %}
     </body>

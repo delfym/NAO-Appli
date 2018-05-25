@@ -84,3 +84,41 @@ img.pull-left { margin-right: 10px; }
 /* leaflet map */
 
 #mapid { height: 350px; }
+
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #map {
+    height: 100%;
+    width: 100vw;
+}
+
+form label, form .btn{
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+#sidebarMenu, #sidebarMenu a  {
+    background-color: #FF9B22;
+    color: white;
+    height: 600px;
+}
+
+#obsLink {
+    margin-top: 45px;
+}
+
+
+
+@media all and (min-width: 900px) {
+    #sidebarMenu {
+        height: auto;
+    }
+}
+/*
+.btnLigtht{
+    color: rgba(255,255,255,.5);
+    box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,.5);
+    background: transparent;
+} */
